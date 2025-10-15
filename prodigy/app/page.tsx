@@ -110,6 +110,66 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Seção: Como agendar seu teste */}
+      <section className="bg-gray-200 py-14 sm:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900">
+              How to Schedule Your Trial at Prodigy
+            </h2>
+            <p className="mt-3 text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
+              Follow these simple steps to book your personalized prosthetics trial experience.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-6">
+            {/* Step 1 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-7 flex flex-col min-h-[320px] md:min-h-[360px]">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7 fill-black">
+                <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 15H5V10h14v9ZM5 8V6h14v2H5Z"/>
+              </svg>
+              <h3 className="mt-2 text-2xl font-semibold text-gray-900">Choose a product line</h3>
+              <p className="mt-3 text-base sm:text-lg text-gray-600">
+                Select the prosthetics category that best matches your needs (arms or legs).
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-7 flex flex-col min-h-[320px] md:min-h-[360px]">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7 fill-black">
+                <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm7-5h-2V1h-2v2H9V1H7v2H5a2 2 0 0 0-2 2v3h18V5a2 2 0 0 0-2-2ZM3 21a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9H3v12Z"/>
+              </svg>
+              <h3 className="mt-2 text-2xl font-semibold text-gray-900">Book your appointment</h3>
+              <p className="mt-3 text-base sm:text-lg text-gray-600">
+                Pick an available date and time for an in-person or virtual session.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-7 flex flex-col min-h-[320px] md:min-h-[360px]">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7 fill-black">
+                <path d="M3 5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-1H5a2 2 0 0 1-2-2V5Zm8 1V5H5v10h2V8a2 2 0 0 1 2-2h2Zm-2 4h10v2H9v-2Zm0 4h10v2H9v-2Z"/>
+              </svg>
+              <h3 className="mt-2 text-2xl font-semibold text-gray-900">Share measurements</h3>
+              <p className="mt-3 text-base sm:text-lg text-gray-600">
+                Provide basic measurements and preferences so we can prepare your trial.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-7 flex flex-col min-h-[320px] md:min-h-[360px]">
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7 fill-black">
+                <path d="M20.285 6.709 9 18l-5.285-5.29 1.41-1.41L9 15.172l9.875-9.873 1.41 1.41Z"/>
+              </svg>
+              <h3 className="mt-2 text-2xl font-semibold text-gray-900">Confirm and attend</h3>
+              <p className="mt-3 text-base sm:text-lg text-gray-600">
+                Receive confirmation and attend your tailored trial with our specialists.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

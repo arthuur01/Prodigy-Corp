@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`${isScrolled ? 'bg-transparent shadow-none' : 'bg-white shadow-lg'} sticky top-0 z-50 transition-colors duration-300`}>
+    <nav className={`${isScrolled ? 'bg-white/10 backdrop-blur-sm shadow-sm' : 'bg-white shadow-lg'} sticky top-0 z-50 transition-colors duration-300`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-14">
           {/* Logo */}
@@ -34,7 +34,7 @@ export default function Navbar() {
   </Link>
 </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
             
@@ -48,10 +48,10 @@ export default function Navbar() {
                 href="#services"
                 className="text-gray-900 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
-                Services
+                Products
               </a>
               <a
-                href="#contact"
+                href="#footer"
                 className="text-gray-900 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 Contact
@@ -59,7 +59,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -67,7 +67,7 @@ export default function Navbar() {
               aria-expanded="false"
             >
               <span className="sr-only">Open Main Menu</span>
-              {/* Hamburger icon */}
+            
               <svg
                 className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@ export default function Navbar() {
             Services
           </a>
           <a
-            href="#contact"
+            href="#footer"
             className="text-gray-900 hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
             onClick={() => setIsMenuOpen(false)}
           >
