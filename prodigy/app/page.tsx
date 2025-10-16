@@ -1,7 +1,9 @@
+import { SplineSceneBasic } from "./components/splinescene";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <section className="relative">
+      <section className="relative bg-black">
         <video
           className="w-full h-[100vh] object-cover block opacity-70"
           src="/prosthetics_main_video.mp4"
@@ -109,8 +111,12 @@ export default function Home() {
             </article>
           </div>
         </div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SplineSceneBasic />
+        </div>
       </section>
 
+      
       {/* Seção: Como agendar seu teste */}
       <section className="bg-gray-200 py-14 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,5 +177,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+      
   );
 }
